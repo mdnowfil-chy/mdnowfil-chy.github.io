@@ -81,56 +81,184 @@
         </div>
     </section>
 
-    <!-- Case Studies Section -->
+    <!-- Case Studies Section (Accordion Format) -->
     <section id="work" class="bg-light">
         <div class="container">
             <h2 class="section-title">Featured Case Studies</h2>
             
-            <div class="case-study-card">
-                <div class="case-study-header">
-                    <h3>Meta CAPI & Server-Side Tracking</h3>
-                    <span class="client-tag">Client: Urban Jungle</span>
-                </div>
+            <div class="accordion-container">
                 
-                <div class="case-study-content">
-                    <h4>🔴 The Problem</h4>
-                    <p>Following iOS 14.5+ and browser tracking preventions, the client's browser-only Meta Pixel dropped a significant portion of checkout events. The algorithm was starved of data, leading to misattributed sales and rapidly inflating CPA.</p>
-                    
-                    <h4>🟡 The Solution</h4>
-                    <p>Engineered a dual-layer tracking architecture. Configured a web container to route interactions to a Stape.io server container. Established a direct server-to-server connection to Meta (CAPI) and hashed rich first-party data (SHA-256) to drastically improve Event Match Quality, utilizing unique Event IDs for 100% deduplication.</p>
-                    
-                    <h4>🟢 The Results</h4>
-                    <div class="metrics-grid">
-                        <div class="metric">
-                            <span class="metric-number">38%</span>
-                            <span class="metric-label">Data Recovery</span>
+                <!-- Case Study 1 -->
+                <details class="case-card" open>
+                    <summary>
+                        <div class="summary-content">
+                            <h3>Meta CAPI & Server-Side Tracking</h3>
+                            <span class="client-tag">Urban Jungle</span>
                         </div>
-                        <div class="metric">
-                            <span class="metric-number">100%</span>
-                            <span class="metric-label">Deduplication</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-number">19%</span>
-                            <span class="metric-label">CPA Reduction</span>
-                        </div>
+                        <span class="dropdown-icon">▼</span>
+                    </summary>
+                    <div class="card-body">
+                        <h4>🔴 The Problem: Data Loss & Inflated Acquisition Costs</h4>
+                        <p>Following iOS 14.5+ and browser tracking preventions, the client's browser-only Meta Pixel dropped a significant portion of checkout events. The algorithm was starved of data, leading to misattributed sales and rapidly inflating CPA.</p>
+                        
+                        <h4>🟡 The Solution: Dual-Layer Tracking Architecture</h4>
+                        <p>Configured a custom web container to route interactions to a Stape.io server container. Established a direct server-to-server connection to Meta (CAPI) and hashed rich first-party data (SHA-256) to drastically improve Event Match Quality. Assigned unique Event IDs to all hits for perfect deduplication.</p>
+                        
+                        <h4>🟢 The Results</h4>
+                        <ul class="results-list">
+                            <li><strong>38% Data Recovery:</strong> Captured over a third of conversion events previously blocked by privacy browsers.</li>
+                            <li><strong>100% Deduplication Rate:</strong> Achieved perfect synchronization between Pixel and API events.</li>
+                            <li><strong>19% CPA Reduction:</strong> Lowered acquisition costs by nearly 20% within the first 30 days.</li>
+                        </ul>
                     </div>
-                </div>
-            </div>
+                </details>
 
-            <!-- Additional Projects Grid -->
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h4>Austin Digital</h4>
-                    <p>Development and scaling of a full-stack digital marketing agency. Engineered a mobile-first architecture focusing on Core Web Vitals, technical SEO, and organic growth systems.</p>
-                </div>
-                <div class="project-card">
-                    <h4>Advanced Google Ads Tracking</h4>
-                    <p>Implemented Enhanced Conversions (SHA-256) and Consent Mode via GTM data layers, reducing data discrepancy to under 2%.</p>
-                </div>
-                <div class="project-card">
-                    <h4>GA4 Looker Studio Dashboard</h4>
-                    <p>Built granular traffic attribution dashboards with time-series tracking and custom regex checkout drop-off funnels for item-scoped analytics.</p>
-                </div>
+                <!-- Case Study 2 -->
+                <details class="case-card">
+                    <summary>
+                        <div class="summary-content">
+                            <h3>Premium E-Commerce Meta Ads Funnel</h3>
+                            <span class="client-tag">High-End Plant Brand</span>
+                        </div>
+                        <span class="dropdown-icon">▼</span>
+                    </summary>
+                    <div class="card-body">
+                        <h4>🔴 The Problem: High Friction & Cart Abandonment</h4>
+                        <p>Selling premium, live plants online introduces massive consumer anxiety regarding shipping damage. The brand suffered from high CPC and massive cart abandonment as users were hesitant to risk purchasing fragile live goods online.</p>
+                        
+                        <h4>🟡 The Solution: Trust-Engineered Funnel Architecture</h4>
+                        <p>Deployed an Advantage+ Shopping Campaign (ASC) layered with high-value Custom Lookalike Audiences. Engineered a MOF retargeting sequence utilizing an "Arrives Alive" guarantee, showing the packaging process to neutralize objections, followed by aggressive BOF dynamic product ads.</p>
+                        
+                        <h4>🟢 The Results</h4>
+                        <ul class="results-list">
+                            <li><strong>Overcame Buyer Hesitation:</strong> The MOF strategy successfully neutralized the primary purchasing objection.</li>
+                            <li><strong>Increased Conversion Rate:</strong> Significantly reduced cart abandonment from TOF traffic.</li>
+                            <li><strong>Profitable Scaling:</strong> Established a highly profitable ROAS, allowing for aggressive daily budget scaling.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Case Study 3 -->
+                <details class="case-card">
+                    <summary>
+                        <div class="summary-content">
+                            <h3>Advanced Google Ads Conversion Tracking</h3>
+                            <span class="client-tag">Data Infrastructure</span>
+                        </div>
+                        <span class="dropdown-icon">▼</span>
+                    </summary>
+                    <div class="card-body">
+                        <h4>🔴 The Problem: Data Discrepancy & Bidding Inefficiency</h4>
+                        <p>Due to strict data privacy regulations, the client faced a severe data discrepancy between backend sales and Google Ads reporting. Missing conversion data caused Google's Smart Bidding algorithms to optimize inefficiently, wasting ad spend.</p>
+                        
+                        <h4>🟡 The Solution: Resilient First-Party Data Integration</h4>
+                        <p>Built a custom GTM data layer mapped to GA4 e-commerce schemas. Implemented Google Enhanced Conversions by hashing first-party data (SHA-256) in the browser, and deployed Consent Mode v2 to dynamically adjust tag behavior based on user consent.</p>
+                        
+                        <h4>🟢 The Results</h4>
+                        <ul class="results-list">
+                            <li><strong>< 2% Discrepancy:</strong> Bridged the gap between backend sales and ad reporting.</li>
+                            <li><strong>Recovered Attribution:</strong> Successfully attributed previously "lost" conversions to specific campaigns.</li>
+                            <li><strong>Algorithm Empowerment:</strong> Provided Smart Bidding with high-quality signals to lower CPA.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Case Study 4 -->
+                <details class="case-card">
+                    <summary>
+                        <div class="summary-content">
+                            <h3>GA4 Looker Studio Dashboard</h3>
+                            <span class="client-tag">Web Analytics</span>
+                        </div>
+                        <span class="dropdown-icon">▼</span>
+                    </summary>
+                    <div class="card-body">
+                        <h4>🔴 The Problem: Data Overload & Blind Spots</h4>
+                        <p>Stakeholders were overwhelmed by the native GA4 interface. They were unable to quickly identify which traffic sources drove the highest lifetime value or pinpoint where users were abandoning the checkout flow.</p>
+                        
+                        <h4>🟡 The Solution: Bespoke Executive Dashboards</h4>
+                        <p>Developed a comprehensive Looker Studio dashboard featuring granular traffic attribution tables, item-scoped product performance analytics, and custom Regex checkout drop-off funnels to isolate friction points step-by-step.</p>
+                        
+                        <h4>🟢 The Results</h4>
+                        <ul class="results-list">
+                            <li><strong>Instant Visibility:</strong> Reduced reporting and data-gathering time by over 10 hours a month.</li>
+                            <li><strong>Actionable Insights:</strong> Regex funnels identified a specific friction point in payment selection, leading to UI changes that lifted overall CVR.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Case Study 5 -->
+                <details class="case-card">
+                    <summary>
+                        <div class="summary-content">
+                            <h3>Austin Digital Agency Build</h3>
+                            <span class="client-tag">Internal Project</span>
+                        </div>
+                        <span class="dropdown-icon">▼</span>
+                    </summary>
+                    <div class="card-body">
+                        <h4>🔴 The Problem: Standing Out in a Saturated Market</h4>
+                        <p>Launching a digital marketing agency requires immediate establishment of authority. A slow website or weak social presence would instantly undermine claims of technical and marketing expertise.</p>
+                        
+                        <h4>🟡 The Solution: High-Performance Infrastructure</h4>
+                        <p>Developed a lightning-fast, mobile-first website optimized for Core Web Vitals (achieving 90+ scores). Designed a highly shareable, data-backed carousel content strategy on Instagram focused on actionable marketing tactics.</p>
+                        
+                        <h4>🟢 The Results</h4>
+                        <ul class="results-list">
+                            <li><strong>Technical Excellence:</strong> The website ranks quickly for targeted B2B search terms.</li>
+                            <li><strong>Sustainable Pipeline:</strong> The organic Instagram strategy drives a steady stream of qualified inbound leads without relying entirely on paid ads.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Case Study 6 -->
+                <details class="case-card">
+                    <summary>
+                        <div class="summary-content">
+                            <h3>Full-Stack Shopify Store (Ferovel)</h3>
+                            <span class="client-tag">Ferovel</span>
+                        </div>
+                        <span class="dropdown-icon">▼</span>
+                    </summary>
+                    <div class="card-body">
+                        <h4>🔴 The Problem: Standard Themes Limiting Scale</h4>
+                        <p>Ferovel required a high-performance storefront capable of handling aggressive paid media scaling. Standard themes lacked bespoke UI features and advanced backend tracking infrastructure.</p>
+                        
+                        <h4>🟡 The Solution: Deep Customization & Gapless Tracking</h4>
+                        <p>Executed deep customizations to the Shopify Liquid theme for a frictionless UI. Engineered a custom data layer pushing highly detailed e-commerce events, seamlessly integrated with GA4 and a dual-layer Meta Pixel/CAPI setup.</p>
+                        
+                        <h4>🟢 The Results</h4>
+                        <ul class="results-list">
+                            <li><strong>Maximized CVR:</strong> Custom UI optimizations drastically reduced user friction.</li>
+                            <li><strong>Ready for Scale:</strong> Delivered a fast storefront with flawless tracking, allowing the brand to scale ad spend confidently.</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <!-- Case Study 7 -->
+                <details class="case-card">
+                    <summary>
+                        <div class="summary-content">
+                            <h3>AI Ad Creatives Gallery</h3>
+                            <span class="client-tag">Creative Strategy</span>
+                        </div>
+                        <span class="dropdown-icon">▼</span>
+                    </summary>
+                    <div class="card-body">
+                        <h4>🔴 The Problem: The High Cost of Creative Testing</h4>
+                        <p>Ad fatigue requires constant creative testing, but producing studio-grade creatives at scale traditionally requires massive budgets for photography and post-production, limiting testing velocity.</p>
+                        
+                        <h4>🟡 The Solution: Advanced AI Prompt Engineering</h4>
+                        <p>Utilized deep prompt engineering (specifying camera angles, focal lengths, and cinematic lighting) to generate photorealistic assets. Developed prompt templates that maintained strict brand aesthetics across hundreds of variations.</p>
+                        
+                        <h4>🟢 The Results</h4>
+                        <ul class="results-list">
+                            <li><strong>80% Cost Reduction:</strong> Practically eliminated the need for expensive physical photoshoots for routine testing.</li>
+                            <li><strong>5x Testing Volume:</strong> Allowed for rapid A/B testing of visual concepts, leading to higher CTR and reduced ad fatigue.</li>
+                        </ul>
+                    </div>
+                </details>
+
             </div>
         </div>
     </section>
@@ -139,7 +267,7 @@
     <section id="contact">
         <div class="container contact-container">
             <div class="contact-text">
-                <h2 class="section-title">Ready to scale your data?</h2>
+                <h2 class="section-title" style="text-align: left;">Ready to scale your data?</h2>
                 <p>Whether you need a complex server-side tracking setup or a full-funnel marketing architecture, let's connect and discuss your infrastructure.</p>
                 
                 <div class="social-links">
