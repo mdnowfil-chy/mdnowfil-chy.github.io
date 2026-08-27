@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta CAPI & Server-Side Tracking | MD NOWFIL CHY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">NOWFIL.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#work">Case Studies</a></li>
+                <li><a href="index.html#contact" class="btn-small">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Case Study Header -->
+    <header class="cs-header">
+        <div class="container">
+            <span class="client-tag">Urban Jungle</span>
+            <h1>Meta CAPI & Server-Side Tracking</h1>
+            <p class="bio" style="max-width: 600px; margin: 0 auto;">Building a dual-layer GTM architecture to bypass iOS 14.5+ restrictions and drastically reduce acquisition costs.</p>
+        </div>
+    </header>
+
+    <!-- Case Study Content -->
+    <main class="cs-content-container">
+        <a href="index.html#work" class="back-link">← Back to Portfolio</a>
+
+        <div class="cs-section">
+            <h2>🔴 The Problem: Data Loss & Inflated Costs</h2>
+            <p>Following iOS 14.5+ and browser tracking preventions (ITP/ETP), the client's browser-only Meta Pixel was dropping a significant portion of checkout and purchase events. The Meta algorithm was starved of conversion data, leading to misattributed sales, poor optimization, and a rapidly inflating Cost Per Acquisition (CPA).</p>
+            
+            <!-- Intro/Problem Slide -->
+            <img src="Title.png" alt="Urban Jungle Case Study Problem - iOS 14+ Data Loss" class="cs-image-full">
+        </div>
+
+        <div class="cs-section">
+            <h2>🟡 The Solution: Dual-Layer Architecture</h2>
+            <p>To bypass client-side restrictions, I engineered a robust server-side tracking architecture.</p>
+            <ul>
+                <li><strong>Dual-Layer GTM Deployment:</strong> Configured a custom web container to securely route interactions to a dedicated server container hosted via Stape.io.</li>
+                <li><strong>CAPI Integration:</strong> Established a direct server-to-server connection to Meta, completely immune to browser-level AdBlockers.</li>
+                <li><strong>Data Hashing:</strong> Mapped and hashed rich first-party customer data (SHA-256) to drastically improve Event Match Quality (EMQ).</li>
+            </ul>
+
+            <!-- Architecture Strategy Slide -->
+            <img src="Agenda.png" alt="Technical Strategy Architecture" class="cs-image-full">
+
+            <!-- Technical Proof Grid -->
+            <div class="cs-image-grid">
+                <img src="FB CAPI PURCHASE TAG FIRED.png" alt="GTM Server-Side Purchase Tag Execution">
+                <img src="Fb Capi Event deduplication.png" alt="Meta Conversions API Deduplication Verification">
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>🟢 The Results: Crystal-Clear Attribution</h2>
+            <p>The implementation immediately stabilized the ad account by restoring data visibility, allowing the machine learning algorithm to optimize effectively. We guaranteed 100% accurate deduplication across the Meta Pixel and Conversions API to ensure zero double-counting.</p>
+            
+            <!-- ROI & Impact Slide -->
+            <img src="Overview.png" alt="Impact and ROI Metrics" class="cs-image-full" style="margin-bottom: 12px;">
+
+            <div class="metrics-grid">
+                <div class="metric">
+                    <span class="metric-number">38%</span>
+                    <span class="metric-label">Data Recovery</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-number">100%</span>
+                    <span class="metric-label">Deduplication</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-number">19%</span>
+                    <span class="metric-label">CPA Reduction</span>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Austin Digital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
