@@ -26,8 +26,8 @@
     <header class="cs-header">
         <div class="container">
             <span class="client-tag">Web Analytics</span>
-            <h1>GA4 E-Commerce Looker Studio Dashboard</h1>
-            <p class="bio" style="max-width: 600px; margin: 0 auto;">GA4, Looker Studio, Regex, and Executive Data Visualization.</p>
+            <h1>GA4 E-Commerce & Full-Funnel Performance Dashboard</h1>
+            <p class="bio" style="max-width: 600px; margin: 0 auto;">I built an interactive e-commerce performance dashboard in Looker Studio using Google Analytics 4 (GA4) data to analyze traffic acquisition, funnel drop-offs, and item-scoped sales.</p>
         </div>
     </header>
 
@@ -36,25 +36,28 @@
         <a href="index.html#work" class="back-link">← Back to Portfolio</a>
 
         <div class="cs-section">
-            <h2>🔴 The Problem</h2>
-            <p>Stakeholders and C-suite executives were overwhelmed by the native, often complex GA4 interface. They were unable to quickly answer critical business questions—specifically identifying which traffic sources drove the highest lifetime value, and pinpointing exactly where users were abandoning the checkout flow.</p>
+            <h2>🔴 The Challenge</h2>
+            <p>Marketing data is often siloed, making it difficult for stakeholders to pinpoint which acquisition channels generate the highest ROI, where users abandon their shopping carts, and which specific products drive the most revenue.</p>
         </div>
 
         <div class="cs-section">
-            <h2>🟡 The Solution</h2>
-            <p>Developed a comprehensive, automated Looker Studio dashboard that democratized complex data for non-technical stakeholders.<br><br><strong>Granular Traffic Attribution:</strong> Built custom tables comparing first-user acquisition against session-level attribution, clearly highlighting the true ROI of different marketing channels.<br><strong>Item-Scoped Analytics:</strong> Visualized specific product performance, identifying top-sellers versus high-view/low-purchase items.<br><strong>Regex Checkout Funnels:</strong> Utilized custom Regular Expressions (Regex) to map distinct URLs and build visual checkout drop-off funnels, isolating friction points step-by-step.</p>
+            <h2>🟡 The Solution & Key Implementations</h2>
+            <p>I built a centralized, dynamic dashboard featuring four core analytical pillars:</p>
+            
+            <ul style="margin-left: 20px; margin-bottom: 24px; margin-top: 16px;">
+                <li style="margin-bottom: 12px;"><strong>Traffic & Revenue Attribution (Heatmap Analysis):</strong> Developed a granular matrix tracking dimensions like Session default channel group against crucial metrics including Sessions, Engagement rate, Transactions, and Purchase revenue. This instantly identifies high-converting channels (e.g., Direct and Organic Search) versus underperforming traffic.</li>
+                <li style="margin-bottom: 12px;"><strong>Acquisition Momentum (Time-Series Tracking):</strong> Implemented trend-line visualizations to monitor daily session spikes across individual channels, allowing for the precise measurement of seasonal trends and campaign launches over 30 days.</li>
+                <li style="margin-bottom: 12px;"><strong>Checkout Drop-Off Funnel:</strong> Engineered a custom regex-filtered visualization to map the exact user journey: <code>view_item</code> &gt;&gt; <code>add_to_cart</code> &gt;&gt; <code>begin_checkout</code> &gt;&gt; <code>purchase</code>. This highlights the steepest drop-off points in the funnel, providing a clear roadmap for UX and CRO improvements.</li>
+                <li style="margin-bottom: 12px;"><strong>Item-Scoped Product Performance:</strong> Successfully navigated GA4's complex scope requirements to align item-level dimensions (Item name) with item-level metrics (Items viewed, Items added to cart, Item revenue). This section provides deep merchandising insights, revealing exactly which products capture interest versus which actually convert to sales.</li>
+            </ul>
             
             <!-- Dashboard Screenshot -->
             <img src="Urban_Jungle_Monthly_Report (1)_page-0001 (1).jpg" alt="GA4 E-Commerce Looker Studio Dashboard Overview" class="cs-image-full">
         </div>
 
         <div class="cs-section">
-            <h2>🟢 The Results</h2>
-            <p>Data democratization led directly to actionable business optimizations.</p>
-            
-            <ul class="results-list" style="margin-top: 24px; font-size: 18px;">
-                <li><strong>Instant Visibility:</strong> Reduced reporting and data-gathering time by over 10 hours a month.</li><li><strong>Actionable Insights:</strong> The regex funnels identified a specific friction point in the payment selection step, leading to UI changes that immediately lifted the overall conversion rate.</li>
-            </ul>
+            <h2>🟢 The Impact</h2>
+            <p>This reporting architecture eliminates data fragmentation. By visually bridging the gap between initial clicks and final revenue, it empowers data-driven decision-making, allowing marketing teams to scale profitable channels.</p>
         </div>
         
     </main>
