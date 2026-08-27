@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full-Stack Shopify Store (Ferovel) | MD NOWFIL CHY</title>
+    <title>GA4 E-Commerce Looker Studio Dashboard | MD NOWFIL CHY</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,9 +25,9 @@
     <!-- Case Study Header -->
     <header class="cs-header">
         <div class="container">
-            <span class="client-tag">Ferovel</span>
-            <h1>Full-Stack Shopify Store (Ferovel)</h1>
-            <p class="bio" style="max-width: 600px; margin: 0 auto;">Shopify, Theme Liquid, GTM, and Advanced Web Analytics.</p>
+            <span class="client-tag">Web Analytics</span>
+            <h1>GA4 E-Commerce & Full-Funnel Performance Dashboard</h1>
+            <p class="bio" style="max-width: 600px; margin: 0 auto;">I built an interactive e-commerce performance dashboard in Looker Studio using Google Analytics 4 (GA4) data to analyze traffic acquisition, funnel drop-offs, and item-scoped sales.</p>
         </div>
     </header>
 
@@ -36,33 +36,28 @@
         <a href="index.html#work" class="back-link">← Back to Portfolio</a>
 
         <div class="cs-section">
-            <h2>🔴 The Problem</h2>
-            <p>Ferovel required a high-performance e-commerce storefront capable of handling aggressive paid media scaling. Standard Shopify themes lacked the bespoke UI features necessary for their specific user journey and, more importantly, lacked the advanced backend tracking infrastructure required for precision marketing.</p>
+            <h2>🔴 The Challenge</h2>
+            <p>Marketing data is often siloed, making it difficult for stakeholders to pinpoint which acquisition channels generate the highest ROI, where users abandon their shopping carts, and which specific products drive the most revenue.</p>
         </div>
 
         <div class="cs-section">
-            <h2>🟡 The Solution</h2>
-            <p>Built a bespoke e-commerce infrastructure designed for speed and gapless data collection.<br><br><strong>Theme Liquid Engineering:</strong> Executed deep customizations to the Shopify Liquid theme to build a frictionless, conversion-optimized front-end UI tailored to the brand's aesthetic.<br><strong>Comprehensive Data Layer:</strong> Engineered a custom data layer that pushed highly detailed e-commerce events (product impressions, add to cart variations, dynamic checkout steps).<br><strong>Tracking Integration:</strong> Seamlessly integrated the data layer with GA4 and a dual-layer Meta Pixel/CAPI setup to ensure gapless data routing.</p>
+            <h2>🟡 The Solution & Key Implementations</h2>
+            <p>I built a centralized, dynamic dashboard featuring four core analytical pillars:</p>
             
-            <div class="cs-image-grid">
-                <img src="Shopify_Code Snippets.png" alt="Shopify Theme Liquid Engineering and GTM Integration">
-                <img src="Shopify_Checkout_Pixel.png" alt="Shopify Customer Events Checkout Pixel Configuration">
-            </div>
-        </div>
-
-        <div class="cs-section">
-            <h2>🟢 The Results</h2>
-            <p>Provided Ferovel with a robust, scalable engine ready for aggressive paid acquisition.</p>
-            
-            <ul class="results-list" style="margin-top: 24px; font-size: 18px;">
-                <li><strong>Maximized Conversion Rate:</strong> The custom UI optimizations drastically reduced user friction, resulting in a highly efficient shopping experience.</li><li><strong>Ready for Scale:</strong> Delivered a lightning-fast storefront armed with flawless tracking infrastructure, providing the brand with the exact foundation needed to confidently and aggressively scale their ad spend.</li>
+            <ul style="margin-left: 20px; margin-bottom: 24px; margin-top: 16px;">
+                <li style="margin-bottom: 12px;"><strong>Traffic & Revenue Attribution (Heatmap Analysis):</strong> Developed a granular matrix tracking dimensions like Session default channel group against crucial metrics including Sessions, Engagement rate, Transactions, and Purchase revenue. This instantly identifies high-converting channels (e.g., Direct and Organic Search) versus underperforming traffic.</li>
+                <li style="margin-bottom: 12px;"><strong>Acquisition Momentum (Time-Series Tracking):</strong> Implemented trend-line visualizations to monitor daily session spikes across individual channels, allowing for the precise measurement of seasonal trends and campaign launches over 30 days.</li>
+                <li style="margin-bottom: 12px;"><strong>Checkout Drop-Off Funnel:</strong> Engineered a custom regex-filtered visualization to map the exact user journey: <code>view_item</code> &gt;&gt; <code>add_to_cart</code> &gt;&gt; <code>begin_checkout</code> &gt;&gt; <code>purchase</code>. This highlights the steepest drop-off points in the funnel, providing a clear roadmap for UX and CRO improvements.</li>
+                <li style="margin-bottom: 12px;"><strong>Item-Scoped Product Performance:</strong> Successfully navigated GA4's complex scope requirements to align item-level dimensions (Item name) with item-level metrics (Items viewed, Items added to cart, Item revenue). This section provides deep merchandising insights, revealing exactly which products capture interest versus which actually convert to sales.</li>
             </ul>
             
-            <!-- Updated 2 Image Grid for Results -->
-            <div class="cs-image-grid" style="margin-top: 32px;">
-                <img src="FB SHOPIFY Events Recieved.png" alt="Facebook Shopify Events Received">
-                <img src="shopify-store.jpg" alt="Shopify Live Storefront Setup">
-            </div>
+            <!-- Dashboard Screenshot -->
+            <img src="Urban_Jungle_Monthly_Report (1)_page-0001 (1).jpg" alt="GA4 E-Commerce Looker Studio Dashboard Overview" class="cs-image-full">
+        </div>
+
+        <div class="cs-section">
+            <h2>🟢 The Impact</h2>
+            <p>This reporting architecture eliminates data fragmentation. By visually bridging the gap between initial clicks and final revenue, it empowers data-driven decision-making, allowing marketing teams to scale profitable channels.</p>
         </div>
         
     </main>
