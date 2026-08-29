@@ -1,70 +1,76 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Ferovel Case Study | Advanced E-Commerce Tracking</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Shopify Store (Ferovel) | MD NOWFIL CHY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="index.html#portfolio">← Back to Portfolio</a></li>
-				</ul>
-			</nav>
+    <!-- Sticky Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">NOWFIL.</a>
+            <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#work">Case Studies</a></li>
+                <li><a href="index.html#contact" class="btn-small">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-		<!-- Case Study Content -->
-			<article class="wrapper style1">
-				<div class="container">
-					<header>
-						<h2>Ferovel: Advanced Shopify Tracking Architecture</h2>
-						<p>End-to-end Conversion Tracking, GTM, and Checkout Pixel implementation for an e-commerce brand.</p>
-					</header>
-					
-					<div class="row">
-						<div class="col-12">
-							<h3>Project Overview</h3>
-							<p>Accurate data attribution is the backbone of any e-commerce growth strategy. For the Ferovel Shopify store, the objective was to implement a flawless analytics architecture to feed accurate conversion data into Meta Ads and GA4.</p>
-							<span class="image fit"><img src="images/shopify-store.png" alt="Ferovel Shopify Storefront Frontend" /></span>
-						</div>
-						
-						<div class="col-12">
-							<hr />
-							<h3>Data Layer & Code Snippet Integration</h3>
-							<p>To track dynamic user behavior—such as viewing specific items and adding them to the cart—custom data layers and liquid code snippets were integrated directly into the Shopify theme. This allowed Google Tag Manager to accurately capture product IDs, cart values, and dynamic currencies for precise event tracking.</p>
-							<span class="image fit"><img src="images/Shopify_Code Snippets.png" alt="Shopify Theme Code Snippets Configuration" /></span>
-						</div>
+    <!-- Case Study Header -->
+    <header class="cs-header">
+        <div class="container">
+            <span class="client-tag">Ferovel</span>
+            <h1>Full-Stack Shopify Store (Ferovel)</h1>
+            <p class="bio" style="max-width: 600px; margin: 0 auto;">Shopify, Theme Liquid, GTM, and Advanced Web Analytics.</p>
+        </div>
+    </header>
 
-						<div class="col-12">
-							<hr />
-							<h3>Checkout Pixel & Purchase Tracking</h3>
-							<p>Shopify's checkout flow requires highly specific pixel configurations to ensure zero data loss during the final purchase step. A custom checkout pixel was configured to securely fire the exact transaction value and deduplicated user data back to the Meta Conversions API and Google Analytics.</p>
-							<span class="image fit"><img src="images/Shopify_Checkout_Pixel.png" alt="Shopify Checkout Pixel Setup" /></span>
-						</div>
-					</div>
-				</div>
-			</article>
+    <!-- Case Study Content -->
+    <main class="cs-content-container">
+        <a href="index.html#work" class="back-link">← Back to Portfolio</a>
 
-		<!-- Footer -->
-			<article class="wrapper style4">
-				<div class="container medium">
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Md Nowfil Chy. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+        <div class="cs-section">
+            <h2>🔴 The Problem</h2>
+            <p>Ferovel required a high-performance e-commerce storefront capable of handling aggressive paid media scaling. Standard Shopify themes lacked the bespoke UI features necessary for their specific user journey and, more importantly, lacked the advanced backend tracking infrastructure required for precision marketing.</p>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <div class="cs-section">
+            <h2>🟡 The Solution</h2>
+            <p>Built a bespoke e-commerce infrastructure designed for speed and gapless data collection.<br><br><strong>Theme Liquid Engineering:</strong> Executed deep customizations to the Shopify Liquid theme to build a frictionless, conversion-optimized front-end UI tailored to the brand's aesthetic.<br><strong>Comprehensive Data Layer:</strong> Engineered a custom data layer that pushed highly detailed e-commerce events (product impressions, add to cart variations, dynamic checkout steps).<br><strong>Tracking Integration:</strong> Seamlessly integrated the data layer with GA4 and a dual-layer Meta Pixel/CAPI setup to ensure gapless data routing.</p>
+            
+            <div class="cs-image-grid">
+                <!-- Using your exact file names for the backend setup -->
+                <img src="Shopify_Code Snippets.png" alt="Shopify Theme Liquid Engineering and GTM Integration">
+                <img src="Shopify_Checkout_Pixel.png" alt="Shopify Customer Events Checkout Pixel Configuration">
+            </div>
+        </div>
 
-	</body>
+        <div class="cs-section">
+            <h2>🟢 The Results</h2>
+            <p>Provided Ferovel with a robust, scalable engine ready for aggressive paid acquisition.</p>
+            
+            <ul class="results-list" style="margin-top: 24px; font-size: 18px;">
+                <li><strong>Maximized Conversion Rate:</strong> The custom UI optimizations drastically reduced user friction, resulting in a highly efficient shopping experience.</li><li><strong>Ready for Scale:</strong> Delivered a lightning-fast storefront armed with flawless tracking infrastructure, providing the brand with the exact foundation needed to confidently and aggressively scale their ad spend.</li>
+            </ul>
+            
+            <div class="cs-image-grid" style="margin-top: 32px;">
+                <!-- Using your exact file names for the validation and final store -->
+                <img src="FB SHOPIFY Events Recieved_2.png" alt="Facebook Shopify Events Received">
+                <img src="shopify-store.png" alt="Shopify Live Storefront Setup">
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MD NOWFIL CHY. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
